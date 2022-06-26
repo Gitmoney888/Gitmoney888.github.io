@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>Papa's Pizza</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav id="nav-bar">
+        <a class="nav-link" href="#video">Recipe</a>
+         <a class="nav-link" href="#history">History</a>
+        <a class="nav-link" href="#prices">Prices</a>
+        <a class="nav-link" href="#pizza">Pizza</a>
+      </nav>
+      <h1>Papa's Pizza</h1>
+      <img id="header-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP7MWlZCLHFGENCtCw6dcJlGNClB_4StSY8oQoEq3DUgF2nJp_KYHCIjDQ9firjuHhVTw&usqp=CAU">
+    </header>
+    <br>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input id="email" name="email" type="email" placeholder="Enter your email">
+      <br>
+      <input id="submit" type="submit"></input>
+    </form>
+    <h3 id="video-caption">Papa's Pizza is known for our incredible crust. Enjoy our easy dough recipe below!</h3>
+    </header>
+    <br>
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/qoCvzWav828" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2 class="categories" id="history">Our History</h2>
+      <p>Since 2021 we have served the best pizza in the midwest! We started out of a garage and have quickly grown to over 24 stores. Our mission is to provide affordable and delicious pizza for the entire world!</P>
+    <h2 class="categories" id="prices">Our Prices</h2>
+      <ul id="container">
+        <li>Personal - $3</li>
+        <li>Medium - $5</li>
+        <li>Large - $7</li>
+        <li>Xtra Large - $8</li>
+      </ul>
+      <p>These are base prices for a thin or hand tossed one topping pizza. Deep dish is an additional $1.50 charge and additional toppings are $1.25 a piece.
+    <h2 class="categories" id="pizza">Our Pizza</h2>
+    <div id="container-2">
+      <h3>Crusts</h3>
+        <ul>
+          <li>Hand-tossed</li>
+          <li>Thin</li>
+          <li>Deep dish</li>
+        </ul>
+      <h3>Cheeses</h3>
+        <ul>
+          <li>Mozzarella</li>
+          <li>Cheddar</li>
+          <li>Pepper Jack</li>
+        </ul>
+      <h3>Toppings</h3>
+        <ul>
+          <li>Pepperoni </li>
+          <li>Bacon</li>
+          <li>Beef</li>
+          <li>Chicken</li>
+        </ul>
+      </div>
+    <hr>
+    <footer>
+      <p>Contact us 816-111-1111
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
+
+
+
+
+html {
+  background-image: linear-gradient(to bottom right, tomato, gold);
+  font-family: Helvetica, sans-serif;
+
+}
+h1 {
+  color: green;
+  font-family: Brush Script MT, cursive;
+  font-size: 45;
+
+}
+
+header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+   position: fixed;
+   width: 100%;
+   left: 0;
+   right: 0;
+  top: 0;
+background-image: linear-gradient(to bottom right, tomato, gold);
+}
+
+#header-img {
+  width: 105px;
+  height: 85px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.nav-link {
+  font-size: 20px;
+  color: green;
+  text-decoration: none;
+  padding: 4px;
+  position: relative;
+  top: 30px;
+
+
+}
+
+form {
+  text-align: center;
+}
+#email {
+  width: 300px;
+  heigth: 150px;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+}
+
+#video-caption {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.categories {
+  color: Whitesmoke;
+  font-style: italic;
+  text-align: center;
+}
+
+#video {
+  display: block;
+  margin: auto;
+}
+#container, #container-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: Georgia, serif;
+}
+
+
+
+}
+
+ul {
+  list-style: none;
+}
+
+@media screen and (min-width: 600px) {
+  #video {
+    height: 315px;
+    width: 560px;
+  }
+}
+footer {
+  font-family: Brush Script MT, cursive;
+  font-size: 20px;
+}
